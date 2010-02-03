@@ -4,6 +4,6 @@
     <component id="FormController" class="com.snowycode.formidable.FormController" />
     <component id="FieldHandler" class="com.snowycode.formidable.handlers.FieldHandler" />
     <component id="DateFieldHandler" class="com.snowycode.formidable.handlers.DateFieldHandler" />
-    <component id="ComboFieldHandler" class="com.snowycode.formidable.handlers.ComboFieldHandler" />
+    <component id="ListBasedFieldHandler" class="com.snowycode.formidable.handlers.ListBasedFieldHandler" />
     
 </componentPackage>
