@@ -8,19 +8,21 @@ package com.snowycode.formidable
 
 		public var formFields:Array;
 
+		public var provider:Object;
+
 		public function populateFields():void
 		{
 			for each (var fieldHandler:FieldHandler in formFields)
 			{
-				var providerFields:Array = fieldHandler.providerProperty.split(".");
-				var provider:Object = fieldHandler.provider;
+				var providerProperties:Array = fieldHandler.providerProperty.split(".");
+				var property:Object = provider;
 
-				for each (var providerField:String in providerFields)
+				for each (var providerProperty:String in providerProperties)
 				{
-					provider = provider[providerField];
+					property = property[providerProperty];
 				}
 
-				fieldHandler.setValue(provider);
+				fieldHandler.setValue(property);
 			}
 		}
 
@@ -28,15 +30,15 @@ package com.snowycode.formidable
 		{
 			for each (var fieldHandler:FieldHandler in formFields)
 			{
-				var providerFields:Array = fieldHandler.providerProperty.split(".");
-				var provider:Object = fieldHandler.provider;
+				var providerProperties:Array = fieldHandler.providerProperty.split(".");
+				var property:Object = provider;
 
-				for (var i:int = 0; i < providerFields.length - 1; i++)
+				for (var i:int = 0; i < providerProperties.length - 1; i++)
 				{
-					provider = provider[providerFields[i]];
+					property = property[providerProperties[i]];
 				}
 
-				provider[providerFields[providerFields.length - 1]] = fieldHandler.getValue();
+				property[providerProperties[providerProperties.length - 1]] = fieldHandler.getValue();
 			}
 		}
 

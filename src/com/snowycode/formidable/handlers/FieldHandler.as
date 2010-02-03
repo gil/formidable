@@ -9,7 +9,6 @@ package com.snowycode.formidable.handlers
 		public var field:UIComponent;
 		public var fieldProperty:String = "text";
 
-		public var provider:Object;
 		public var providerProperty:String;
 
 		public var validator:Validator;
