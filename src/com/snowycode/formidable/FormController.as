@@ -1,5 +1,6 @@
 package com.snowycode.formidable
 {
+	import com.snowycode.formidable.handlers.FieldHandler;
 	import mx.validators.Validator;
 
 	public class FormController
@@ -11,7 +12,7 @@ package com.snowycode.formidable
 		{
 			for each (var fieldHandler:FieldHandler in formFields)
 			{
-				var providerFields:Array = fieldHandler.providerField.split(".");
+				var providerFields:Array = fieldHandler.providerProperty.split(".");
 				var provider:Object = fieldHandler.provider;
 
 				for each (var providerField:String in providerFields)
@@ -19,7 +20,7 @@ package com.snowycode.formidable
 					provider = provider[providerField];
 				}
 
-				fieldHandler.field.setValue(provider);
+				fieldHandler.setValue(provider);
 			}
 		}
 
@@ -27,7 +28,7 @@ package com.snowycode.formidable
 		{
 			for each (var fieldHandler:FieldHandler in formFields)
 			{
-				var providerFields:Array = fieldHandler.providerField.split(".");
+				var providerFields:Array = fieldHandler.providerProperty.split(".");
 				var provider:Object = fieldHandler.provider;
 
 				for (var i:int = 0; i < providerFields.length - 1; i++)
@@ -35,7 +36,7 @@ package com.snowycode.formidable
 					provider = provider[providerFields[i]];
 				}
 
-				provider[providerFields[providerFields.length - 1]] = fieldHandler.field.getValue();
+				provider[providerFields[providerFields.length - 1]] = fieldHandler.getValue();
 			}
 		}
 
@@ -69,7 +70,7 @@ package com.snowycode.formidable
 		{
 			for each (var fieldHandler:FieldHandler in formFields)
 			{
-				fieldHandler.field.clear();
+				fieldHandler.clear();
 			}
 		}
 

@@ -2,10 +2,8 @@
 <componentPackage>
 
     <component id="FormController" class="com.snowycode.formidable.FormController" />
-    <component id="FieldHandler" class="com.snowycode.formidable.FieldHandler" />
-    
-    <component id="FieldTextInput" class="com.snowycode.formidable.fields.FieldTextInput" />
-    <component id="FieldDateField" class="com.snowycode.formidable.fields.FieldDateField" />
-    <component id="FieldComboBox" class="com.snowycode.formidable.fields.FieldComboBox" />
+    <component id="FieldHandler" class="com.snowycode.formidable.handlers.FieldHandler" />
+    <component id="DateFieldHandler" class="com.snowycode.formidable.handlers.DateFieldHandler" />
+    <component id="ComboFieldHandler" class="com.snowycode.formidable.handlers.ComboFieldHandler" />
     
 </componentPackage>

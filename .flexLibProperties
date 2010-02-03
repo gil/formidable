@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties version="1">
-  <includeClasses/>
+  <includeClasses>
+    <classEntry path="com.snowycode.formidable.handlers.DateFieldHandler"/>
+    <classEntry path="com.snowycode.formidable.handlers.ComboFieldHandler"/>
+  </includeClasses>
   <includeResources/>
   <namespaceManifests>
     <namespaceManifestEntry manifest="manifest.xml" namespace="http://form.snowycode.com"/>
