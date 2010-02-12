@@ -1,4 +1,4 @@
-package com.snowycode.formidable.handlers
+package com.mochadev.formidable.handlers
 {
 	import mx.core.UIComponent;
 	import mx.validators.Validator;

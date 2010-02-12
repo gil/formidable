@@ -1,6 +1,6 @@
-package com.snowycode.formidable
+package com.mochadev.formidable
 {
-	import com.snowycode.formidable.handlers.FieldHandler;
+	import com.mochadev.formidable.handlers.FieldHandler;
 	import mx.validators.Validator;
 
 	public class FormController

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <componentPackage>
 
-    <component id="FormController" class="com.snowycode.formidable.FormController" />
-    <component id="FieldHandler" class="com.snowycode.formidable.handlers.FieldHandler" />
-    <component id="DateFieldHandler" class="com.snowycode.formidable.handlers.DateFieldHandler" />
-    <component id="ListBasedFieldHandler" class="com.snowycode.formidable.handlers.ListBasedFieldHandler" />
+    <component id="FormController" class="com.mochadev.formidable.FormController" />
+    <component id="FieldHandler" class="com.mochadev.formidable.handlers.FieldHandler" />
+    <component id="DateFieldHandler" class="com.mochadev.formidable.handlers.DateFieldHandler" />
+    <component id="ListBasedFieldHandler" class="com.mochadev.formidable.handlers.ListBasedFieldHandler" />
     
 </componentPackage>

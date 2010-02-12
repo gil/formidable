@@ -3,6 +3,6 @@
   <includeClasses/>
   <includeResources/>
   <namespaceManifests>
-    <namespaceManifestEntry manifest="manifest.xml" namespace="http://form.snowycode.com"/>
+    <namespaceManifestEntry manifest="manifest.xml" namespace="http://formidable.mochadev.com"/>
   </namespaceManifests>
 </flexLibProperties>
